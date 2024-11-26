@@ -12,6 +12,7 @@ To write a yacc program to recognize a valid arithmetic expression that uses ope
 7.	Compile these with the C compiler as gcc lex.yy.c y.tab.c
 8.	Enter an arithmetic expression as input and the tokens are identified as output.
 # PROGRAM
+```
 %{
 #include "y.tab.h"
 %}
@@ -70,6 +71,7 @@ int main() {
 void yyerror(const char *s) {
     fprintf(stderr, "Error: %s\n", s);
 }
+```
 # OUTPUT
 ![Screenshot 2024-11-15 204159](https://github.com/user-attachments/assets/8040002c-dddc-441d-8532-d6014a311287)
 # RESULT
